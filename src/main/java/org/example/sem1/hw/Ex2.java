@@ -1,4 +1,4 @@
-package org.example.sem1.hw2;
+package org.example.sem1.hw;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class Ex2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
+        scanner.close();
         System.out.print("Укажите диапазон поиска простых чисел: ");
         printPrimeNums(n);
     }

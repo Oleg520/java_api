@@ -1,4 +1,4 @@
-package org.example.sem1.cw4;
+package org.example.sem1.cw;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Ex4 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scanner.nextInt();
         }
-
+        scanner.close();
         if(isSimmetr(arr)){
             System.out.println("Симметричный");
         }else {

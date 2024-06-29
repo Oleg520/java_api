@@ -1,4 +1,4 @@
-package org.example.sem1.cw1;
+package org.example.sem1.cw;
 
 import java.util.Scanner;
 
@@ -8,6 +8,7 @@ public class Ex1 {
         int n = scanner.nextInt();
         int result = GetSumMinusPr(n);
         System.out.println("result= " + result);
+        scanner.close();
     }
 
     /**

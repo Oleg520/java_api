@@ -1,4 +1,4 @@
-package org.example.sem1.hw3;
+package org.example.sem1.hw;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Ex3 {
         System.out.print("Введите второе число: ");
         int b = scanner.nextInt();
         char op = str.charAt(0);
-
+        scanner.close();
         double result = calculate(op, a, b);
         System.out.println("result = " + result);
     }

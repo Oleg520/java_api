@@ -1,4 +1,4 @@
-package org.example.sem1.cw3;
+package org.example.sem1.cw;
 
 public class Ex3 {
     public static void main(String[] args) {

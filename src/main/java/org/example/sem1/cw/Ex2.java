@@ -1,4 +1,4 @@
-package org.example.sem1.cw2;
+package org.example.sem1.cw;
 
 import java.util.Scanner;
 

@@ -1,0 +1,22 @@
+июн. 27, 2024 9:55:38 PM org.example.sem2.cw.Ex4 writeFile
+WARNING: Ошщибка ззаписи
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-06-28T05:28:46.675866Z</date>
+  <millis>1719552526675</millis>
+  <nanos>866000</nanos>
+  <sequence>0</sequence>
+  <logger>org.example.sem2.cw.Ex4</logger>
+  <level>WARNING</level>
+  <class>org.example.sem2.cw.Ex4</class>
+  <method>writeFile</method>
+  <thread>1</thread>
+  <message>Ошщибка ззаписи</message>
+</record>
+</log>
+июн. 28, 2024 10:10:31 PM org.example.sem2.cw.Ex4 writeFile
+WARNING: Ошибка записи
+июн. 28, 2024 10:18:33 PM org.example.sem2.cw.Ex4 writeFile
+WARNING: Ошибка записи
