@@ -25,7 +25,7 @@ public class Ex4 {
             try {
                 fh = new FileHandler("error.log", true);
             } catch (IOException ex) {
-                throw new RuntimeException(ex);
+                System.out.println(ex.getMessage());
             }
             logger.addHandler(fh);
             SimpleFormatter sFormat = new SimpleFormatter();

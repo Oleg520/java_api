@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class Ex1 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
 //        String pathProject = System.getProperty("user.dir");
 //        System.out.println("pathProject = " + pathProject);
 //        String pathFile = pathProject.concat("/file.txt");
@@ -22,11 +22,14 @@ public class Ex1 {
         logger.info("Введите значение N:");
         n = scanner.nextInt();
 
-        String s = getStrOfChars(n, c1, c2);
-        System.out.println("s = " + s);
-        System.out.println("s.length = " + s.length());
-
-
+        String s = null;
+        try {
+            s = getStrOfChars(n, c1, c2);
+            System.out.println("s = " + s);
+            System.out.println("s.length = " + s.length());
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     /**

@@ -47,7 +47,7 @@ public class BubbleSort {
     }
 
     public static void logSteps(String strArray){
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         String dateTime = dateFormat.format(new Date());
         try {
             fileWriter.write(dateTime + " " + strArray + "\n");
