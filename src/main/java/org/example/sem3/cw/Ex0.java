@@ -1,4 +1,4 @@
-package org.example.Sem3.cw;
+package org.example.sem3.cw;
 
 public class Ex0 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.example.Sem3.hw;
+package org.example.sem3.hw;
 
 import java.util.ArrayList;
 import java.util.List;

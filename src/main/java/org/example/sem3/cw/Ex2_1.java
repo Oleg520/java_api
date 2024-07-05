@@ -1,4 +1,4 @@
-package org.example.Sem3.cw;
+package org.example.sem3.cw;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -3,20 +3,6 @@ package org.example.sem1.hw;
 import java.util.Scanner;
 
 public class Ex3 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите первое число: ");
-        int a = scanner.nextInt();
-        System.out.print("Введите знак операции: ");
-        String str = scanner.next();
-        System.out.print("Введите второе число: ");
-        int b = scanner.nextInt();
-        char op = str.charAt(0);
-        scanner.close();
-        double result = calculate(op, a, b);
-        System.out.println("result = " + result);
-    }
-
     /**
      * @param op арифметический оператор
      * @param a  первое число
@@ -49,5 +35,19 @@ public class Ex3 {
                 return 0;
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите первое число: ");
+        int a = scanner.nextInt();
+        System.out.print("Введите знак операции: ");
+        String str = scanner.next();
+        System.out.print("Введите второе число: ");
+        int b = scanner.nextInt();
+        char op = str.charAt(0);
+        scanner.close();
+        double result = calculate(op, a, b);
+        System.out.println("result = " + result);
     }
 }
