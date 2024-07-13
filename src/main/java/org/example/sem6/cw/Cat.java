@@ -1,5 +1,7 @@
 package org.example.sem6.cw;
 
+import java.util.Objects;
+
 /**
  * 1. Реализуйте 1 из вариантов класса Cat из предыдущего задания, можно
  * использовать не все придуманные поля и методы. Создайте несколько
@@ -18,14 +20,19 @@ public class Cat {
     @Override
     public String toString() {
 
-        return String.format("name: %s; color: %s; age: %d", name,color,age);
+        return String.format("Cat {name: %s; color: %s; age: %d}", name, color, age);
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this != o) return true;
+        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Cat cat = (Cat) o;
-        return id == cat.id;
+        return id == cat.id && age == cat.age && Objects.equals(name, cat.name) && Objects.equals(sex, cat.sex) && Objects.equals(owner, cat.owner) && Objects.equals(color, cat.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age, sex, owner, color);
     }
 }

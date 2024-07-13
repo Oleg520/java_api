@@ -27,9 +27,31 @@ public class Ex3 {
         cat1.color = "Black";
         cat1.age = 3;
 
-        System.out.println("cat1.toString() = " + cat1);
+        Cat cat2 = new Cat();
+        cat2.id = 2;
+        cat2.name = "Bamble";
+        cat2.color = "Yellow";
+        cat2.age = 5;
 
-        Set<Cat> cats = new HashSet<>(List.of(cat1));
+        System.out.println(Arrays.asList(cat1, cat2));
+
+        Set<Cat> cats = new HashSet<>(Arrays.asList(cat1, cat2, cat1));
         System.out.println("cats = " + cats);
+        System.out.println(cat1.equals(cat2));
+        
+        Set<Cat> cats2 = new HashSet<>();
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < 10_000_000; i++) {
+            cats2.add(new Cat());
+        }
+        long end = System.currentTimeMillis();
+        System.out.println("Время создания множества: "+ (end - start));
+        
+        start = System.currentTimeMillis();
+        for (int i = 0; i < cats2.size(); i++) {
+            cats2.contains(cat1);
+        }
+        end = System.currentTimeMillis();
+        System.out.println("Время перебора: " + (end - start));
     }
 }

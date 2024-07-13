@@ -16,8 +16,8 @@ import java.util.*;
 public class Ex1 {
     public static void main(String[] args) {
         List<Integer> array = fillArray(1000, 25);
-        System.out.println("Arrays.toString(array) = " + array);
-        System.out.println(getUniquePercent((ArrayList<Integer>) array) + "%");
+        System.out.println("array = " + array);
+        System.out.println(getUniquePercent(array) + "%");
     }
 
     public static ArrayList<Integer> fillArray(int size, int bound) {
@@ -29,7 +29,7 @@ public class Ex1 {
         return arr;
     }
 
-    public static float getUniquePercent(ArrayList<Integer> arr) {
+    public static float getUniquePercent(List<Integer> arr) {
         Set<Integer> uniqueValue = new HashSet<>(arr);
         return  uniqueValue.size() * 100f / arr.size();
     }
